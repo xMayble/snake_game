@@ -5,13 +5,13 @@ screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Snake Game")
 
-x_position = [0,-20,-40]
+starting_positions = [(0,0), (-20,0), (-40,0)]
 
 
-for position in x_position:
+for position in starting_positions:
     new_segment = Turtle("square")
     new_segment.color("white")
-    new_segment.goto(x=position, y=0)
+    new_segment.goto(position)
 
 
 
