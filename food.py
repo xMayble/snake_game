@@ -1,4 +1,5 @@
 from turtle import Turtle
+import random
 
 class Food(Turtle):
 
@@ -7,3 +8,8 @@ class Food(Turtle):
         self.shape("circle")
         self.penup()
         self.shapesize(stretch_len=8.5, stretch_wid=8.5)
+        self.color("blue")
+        self.speed("fastest")
+        random_x = random.randint(-288, 288)
+        random_y = random.randint(-288, 288)
+        self.goto(random_x, random_y)
